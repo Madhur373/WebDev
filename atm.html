@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Automatic Vending Machine</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            width: 400px;
+            text-align: center;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            background-color: #4CAF50;
+            color: #fff;
+            text-decoration: none;
+            border: none;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 20px;
+            margin: 10px 0;
+        }
+
+        .drink-buttons {
+            margin-top: 20px;
+        }
+
+        .payment-buttons {
+            margin-top: 20px;
+        }
+
+        /* Improved styling */
+        .container {
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+        }
+
+        .button {
+            background-color: #4CAF50;
+            color: #fff;
+            font-size: 18px;
+            padding: 12px 24px;
+            margin: 10px;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Automatic Vending Machine</h1>
+        <p>Select your drink:</p>
+        <div class="drink-buttons">
+            <button class="button">Coca-Cola</button>
+            <button class="button">Pepsi</button>
+            <button class="button">Sprite</button>
+            <button class="button">Fanta</button>
+        </div>
+
+        <p>Payment Options:</p>
+        <div class="payment-buttons">
+            <button class="button">Credit Card</button>
+            <button class="button">Mobile Payment</button>
+        </div>
+
+        <p>Thank you for using the vending machine!</p>
+    </div>
+</body>
+
+</html>

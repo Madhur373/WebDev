@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Mobile Keypad Design</title>
+    <style>
+        /* Basic styling for the mobile keypad */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #cbcbcb;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            margin-top: 20px;
+            color: #fff;
+        }
+
+        .num {
+            margin-top: 20px;
+        }
+
+        input[type="tel"] {
+            width: 281px;
+            height: 40px;
+            font-size: 24px;
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .keypad {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+            justify-content: center;
+            margin: 20px auto;
+            max-width: 300px;
+        }
+
+        .key {
+            padding: 9px;
+            font-size: 22px;
+            text-align: center;
+            background-color: #686868;
+            border: 2px solid #000;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .key:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .box {
+            margin: 141px auto;
+            max-width: 310px;
+            background-color: #000000;
+            padding: 31px;
+            border-radius: 18px;
+            box-shadow: 0 0 54px rgba(0, 0, 0, 1);
+        }
+
+        .action-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .action-button {
+            width: 48%;
+            padding: 8px;
+            font-size: 18px;
+            text-align: center;
+            background-color: #717171;
+            border: 2px solid #000;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+
+        .action-button:hover {
+            background-color: #ffffff;
+            color: black;
+        }
+    </style>
+
+    <script>
+        function appendNumber(number) {
+            var input = document.getElementById("phone");
+            input.value += number;
+        }
+
+        function clearInput() {
+            var input = document.getElementById("phone");
+            input.value = "";
+        }
+
+        function enter() {
+            alert("You entered: " + document.getElementById("phone").value);
+        }
+    </script>
+
+</head>
+
+<body>
+    <div class="box">
+        <h1>Mobile Keypad </h1>
+        <div class='num'>
+            <input type="tel" id="phone" name='phone' readonly>
+        </div>
+        <div class="keypad">
+            <button class="key" onclick="appendNumber(1)">1</button>
+            <button class="key" onclick="appendNumber(2)">2</button>
+            <button class="key" onclick="appendNumber(3)">3</button>
+            <button class="key" onclick="appendNumber(4)">4</button>
+            <button class="key" onclick="appendNumber(5)">5</button>
+            <button class="key" onclick="appendNumber(6)">6</button>
+            <button class="key" onclick="appendNumber(7)">7</button>
+            <button class="key" onclick="appendNumber(8)">8</button>
+            <button class="key" onclick="appendNumber(9)">9</button>
+            <button class="key" onclick="appendNumber('*')">*</button>
+            <button class="key" onclick="appendNumber(0)">0</button>
+            <button class="key" onclick="appendNumber('#')">#</button>
+        </div>
+        <div class="action-buttons">
+            <button class="action-button" onclick="clearInput()">Clear</button>
+            <button class="action-button" onclick="enter()">Enter</button>
+        </div>
+    </div>
+</body>
+
+</html>

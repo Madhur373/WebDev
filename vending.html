@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>ATM Interface</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #291db8d6;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        .container {
+            margin: 189px auto;
+            max-width: 310px;
+            background-color: #fff;
+            padding: 31px;
+            border-radius: 18px;
+            box-shadow: 0 0 54px rgb(0, 0, 0, 1);
+        }
+
+        .h1 {
+            font-size: 16px;
+            color: #000000;
+            margin-bottom: 11px;
+            text-align: left;
+        }
+
+        .input-group {
+            margin-bottom: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            text-align: left;
+            margin-bottom: 5px;
+            color: #000000;
+            font-weight: bold;
+        }
+
+        .input-group input {
+            width: 97%;
+            padding: 5px;
+            font-size: 16px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+
+
+        .button {
+
+            background-color: #d52f53;
+            color: white;
+            padding: 8px 135px;
+            font-size: 16px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .button:hover {
+            background-color: #49a64e;
+            color: #000000;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>ATM Interface</h1>
+        <br>
+        <form>
+            <div class="input-group">
+                <label for="account">Account Number</label>
+                <input type="text" id="account" name="account" placeholder="Enter account number">
+            </div>
+            <div class="input-group">
+                <label for="pin">PIN</label>
+                <input type="password" id="pin" name="pin" placeholder="Enter PIN">
+            </div>
+            <br>
+
+            <div class="login">
+                <input type="submit" value="LOGIN" class="button">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>
